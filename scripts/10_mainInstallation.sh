@@ -16,4 +16,4 @@ sudo pacman -S --needed --noconfirm $(sed 's/#.*//g ; /^[[:space:]]*$/d' $arco)
 sudo pacman -S --needed --noconfirm $(sed 's/#.*//g ; /^[[:space:]]*$/d' $repo)
 
 #: Install User prefered packages (AUR).
-sudo paru -S --needed --noconfirm $(sed 's/#.*//g ; /^[[:space:]]*$/d' $aur)
+paru -S --needed --noconfirm $(sed 's/#.*//g ; /^[[:space:]]*$/d' $aur)
