@@ -8,6 +8,7 @@ arcolinux-alacritty-git
 arcolinux-neofetch-git
 arcolinux-sddm-simplicity-git
 arcolinux-wallpapers-git
+arcolinuxd-welcome-app-git
 #: }}}
 
 #################################################
@@ -24,6 +25,11 @@ xf86-video-intel
 #: NVIDIA (fuck you, btw!)
 nouveau
 nvidia-settings
+
+#: mkinitcpio warnings
+aic94xx-firmware
+upd72020x-fw
+wd719x-firmware
 
 #: Others
 xf86-video-openchrome
@@ -50,21 +56,30 @@ tmux
 screen
 mc
 
-duf-bin
-dex
+arch-install-scripts
 asciinema
 clonezilla
-partclone
-yay-bin
-numlockx
-polkit-gnome
-gparted
-gpart
+dex
+duf-bin
 gksu
-arch-install-scripts
+gpart
+gparted
+mixxx
+numlockx
+partclone
+polkit-gnome
+pv
 qemu-guest-agent
 refind
+sg3_utils
+the_silver_searcher
 xsel
+yay-bin
+
+networkmanager-openconnect
+networkmanager-openvpn
+networkmanager-pptp
+networkmanager-vpnc
 #: }}}
 
 #################################################
