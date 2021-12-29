@@ -1,0 +1,149 @@
+#################################################
+#		Packages to Install		#
+#################################################
+
+#################################################
+#: KDE Plasma Desktop {{{
+
+#: Group package: plasma (x86_64)
+bluedevil					# Plasma bluetooth.
+breeze						# Plasma's default theme Breeze.
+breeze-gtk					# Breeze widget theme for GTK2 & GTK3.
+#discover					# KDE's appstore.
+drkonqi						# KDE's crash handler.
+kactivitymanagerd				# System service to manage user's activities and track usage patterns.
+kde-cli-tools					# Useful cli tools to better interact with the system.
+kde-gtk-config					# GTK configurator. Change GTK2/3 to match KDE's Qt theme.
+kdecoration					# Plugin based library to create window decorations.
+kdeplasma-addons				# Addons to improve your Plasma experience.
+kgamma5						# Change gamma settings.
+khotkeys					# Create custom hotkeys.
+kinfocenter					# Utility that provides information about a computer system.
+kmenuedit					# Edit menu options.
+kscreen						# Manage screen orientation, resolution,...
+kscreenlocker					# KDE's screen locker implementation.
+ksshaskpass					# Front-end for ssh-add which stores the password of the ssh key in KWallet.
+ksystemstats					# Daemon backend for KDE's system monitor apps (plasma-systemmoitor, ksysguard).
+kwallet-pam					# Unlock Kwallet on login.
+#kwayland-integration				# Integration plugins for KDE frameworks on Wayland.
+#kwayland-server				# Wayland server components built on KDE Frameworks.
+kwin						# KDE's window manager.
+kwrited						# Don't ask, just install.
+layer-shell-qt					# Kscreenlocker's dependancy.
+libkscreen					# Kscreen libs.
+libksysguard					# Libs for system monitor apps.
+milou						# Indexing & file search.
+#oxygen						# Legacy KDE theme (probably).
+plasma-browser-integration			# Browser integration.
+plasma-desktop					# Base package for KDE plasma desktop.
+plasma-disks					# S.M.A.R.T. device monitor app.
+plasma-firewall					# Firewall.
+plasma-integration				# Qt Platform Theme integration plugins.
+plasma-nm					# Network manager.
+plasma-pa					# PulseAudio for Plasma.
+#plasma-sdk					# Applications useful for Plasma development.
+plasma-systemmonitor				# System monitor app.
+#plasma-thunderbolt				# Control Thunderbolt devices.
+plasma-vault					# Encrypted vault for storing sensitive data.
+plasma-workspace				# Entire KDE depends on this (even plasma-desktop).
+#plasma-workspace-wallpapers			# Wallpapers.
+polkit-kde-agent				# KDE's polkit.
+powerdevil					# Power management.
+sddm-kcm					# KDE Config Module for SDDM.
+systemsettings					# KDE system manager for hardware, software, and workspaces.
+xdg-desktop-portal-kde				# Better integrate KDE & GTK apps.
+
+#: Meta package: kde-system-meta
+dolphin						# KDE's default file manager.
+kcron						# KDE's cron implementation.
+khelpcenter					# Documentation lookup for KDE apps.
+ksystemlog					# System log viewer app.
+partitionmanager				# KDE's version of gparted.
+
+#: The rest
+dolphin-plugins					# Adds Dropbox, Git,... integration to dolphin.
+ffmpeg						# Power media tool to record, convert, stream audio & video.
+ffmpegthumbs					# Adds video thumbnail to dolphin.
+kdegraphics-thumbnailers			# Adds PDF and PS thumbnails to dolphin.
+kdegraphics-mobipocket				# Plugins to handle mobipocket files. Adds mobi support to Okular.
+phonon-qt5					# The multimedia framework by KDE.
+phonon-qt5-gstreamer				# Phonon GStreamer backend for Qt5.
+gst-libav					# libav codec.
+gst-plugins-base				# Multimedia graph framework - base plugins.
+gst-plugins-good				# PulseAudio support and good codecs.
+gst-plugins-bad					# Additional codecs.
+gst-plugins-ugly				# Additional additional codecs.
+pulseaudio-alsa					# ALSA Configuration for PulseAudio.
+pulseaudio-bluetooth				# Bluetooth support for PulseAudio.
+#pulseaudio-equalizer				# Graphical equalizer for PulseAudio.
+#pulseaudio-zeroconf				# Zeroconf support for PulseAudio.
+pavucontrol-qt					# A Qt PulseAudio mixer.
+firewalld					# plasma-firewall backend.
+#ufw						# Alternative plasma-firewall backend.
+#ufw-extras					# Extra configuration files for UFW.
+cryfs						# plasma-vault backend.
+#encfs						# Old and insecure. DO NOT USE.
+gocryptfs					# Alternative plasma-vault backend.
+kup						# KDE's backup solution, a frontend for bup.
+bup						# Efficient backup system based on the git packfile format.
+ibus						# Input method framework for multilingual input.
+kinit						# Helper library to speed up KDE app start time.
+sddm						# KDE's default display manager (a.k.a login manager).
+kdf						# KDiskFree. Disk usage utility.
+qt5-virtualkeyboard				# Virtual keyboard framework. Adds virtual keyboard at login screen.
+xdg-desktop-portal				# Helps integrate KDE & GTK. Eg: Letting GTK apps (such as brave-bin) use KDE's file picker dialog.
+bluez-utils					# Development and debugging utilities for the bluetooth protocol stack.
+kdeconnect					# Adds communication between KDE and your smartphone.
+sshfs						# Remote filesystem browser.
+qt5-tools					# For some runcommand plugin actions.
+xclip						# Clipboard support for terminal text editor (better xsel alternative).
+kaccounts-providers				# Adds online accounts integration with KDE.
+kaccounts-integration				# Adds online accounts integration with KDE.
+kio						# Resource and network access abstraction.
+kio-extras					# Additional components to increase the functionality of KIO.
+qt5-imageformats				# Plugins for additional image formats (TIFF, MNG, TGA, WBMP). Helps display thumbnails for additional image formats.
+kimageformats					# Image format plugins for Qt5. Helps display thumbnails for additional image formats.
+kio-fuse					# FUSE interface for KIO.
+kio-gdrive					# Integrate and sync Google Drive with KDE applications (Dolphin, Gwenview,...).
+mtpfs						# FUSE filesystem that supports reading and writing from any MTP device.
+packagekit-qt5					# To install new krunner plugins and show native apps on Discover.
+kdialog						# Display dialog boxes from shell scripts. Syntax inspired from `dialog` command.
+keditbookmarks					# Extention to add bookmarking functionality to (a few) applications like Konsole and krdc.
+purpose						# Helps integrate many services and plugins (sharing, publishing,...).
+kwallet						# Secure and unified container for user passwords.
+appmenu-gtk-module				# Some GTK apps (such as nvidia-settings) require this package to be able to display its icon in app tray.
+ocs-url						# An install helper program for items served via OpenCollaborationServices.
+systemd-kcm					# Adds functionality to manage systemd services from the Settings menu.
+#: }}}
+
+#################################################
+#: Optionals {{{
+
+#: Power management
+#tlp						# Power management tool for laptops.
+#acpi_call					# Opt dep for tlp -> ThinkPad battery functions.
+#tp_smapi					# Opt dep for tlp -> ThinkPad battery functions.
+#ethtool					# Opt dep for tlp -> Disable Wake On Lan.
+#smartmontools					# Opt dep for tlp -> Display S.M.A.R.T. data in tlp-stat.
+#powertop					# Tool to diagnose power consumption & management.
+#auto-cpufreq (AUR)				# Check this out. It's in the AUR (for now). Don't use alongside tlp.
+
+#: Network discovery
+#zeroconf-ioslave				# Adds an entry to Dolphin's Network page to show local services such as printers which advertise themselves with DNS-SD.
+
+#: Printing
+print-manager					# Set up and configure printers.
+system-config-printer				# Auto-detect the printer driver.
+colord						# ICC (International Color Consortium) color profile support.
+cups-pk-helper					# CUPS policykit helper.
+cups						# The CUPS Printing System.
+cups-pdf					# PDF printer for CUPS.
+bluez-cups					# CUPS printer backend for Bluetooth printers.
+
+#: SMB
+#samba						# SMB Fileserver and AD Domain server.
+#smbclient					# Tools to access a server's filespace and printers via SMB.
+#kdenetwork-filesharing				# SMB protocal file sharing for KDE. Set folders to be shared on your local network using Samba.
+#smb4k						# Samba network browsing application.
+#python-pysmbc					# Python 3 bindings for libsmbclient.
+#: }}}

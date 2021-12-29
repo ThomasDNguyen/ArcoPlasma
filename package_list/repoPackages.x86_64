@@ -1,0 +1,94 @@
+#################################################
+#	Install Packages from Repo		#
+#################################################
+
+#################################################
+#: Beautify {{{
+
+#: Configuration tools
+kvantum						# SVG-based theme engine for Qt5/6.
+#qt5ct						# Qt5 Configuration Utility
+
+#: Themes
+materia-kde
+
+#: Icons
+papirus-icon-theme
+
+#: Fonts
+noto-fonts
+noto-fonts-emoji
+ttf-joypixels
+ttf-ubuntu-font-family
+#ttf-ibm-plex
+#: }}}
+
+#################################################
+#: CLI tools {{{
+
+#: The usuals
+git						# Version control system.
+curl						# An URL retrieval utility and library.
+zsh						# Command interpreter (shell). Better bash.
+fzf						# Command-line fuzzy finder.
+neofetch					# System information tool.
+htop						# Interactive process viewer.
+btop						# Better-looking htop.
+openssh						# Connectivity tool for remote login with the SSH protocol.
+ffmpeg						# Complete solution to record, convert and stream audio and video.
+yt-dlp						# Fork of youtube-dl multimedia downloader.
+konsave						# Utility to save KDE customizations.
+#hardcode-fixer-git				# Fix icons for applications with hardcoded icons.
+neovim						# Better vim.
+
+#: Rust alternatives
+paru-bin					# yay (AUR helper).
+bat						# cat
+exa						# ls
+ripgrep						# grep
+#: }}}
+
+#################################################
+#: GUI Applications {{{
+
+#: KDE
+konsole                                         # KDE's default Terminal emulator (Good).
+yakuake                                         # Dropdown terminal emulator based on Konsole.
+kate                                            # KDE's default text editor (Good).
+kleopatra                                       # Certificate Manager and Unified Crypto GUI (use *this* over kgpg).
+#kwalletmanager                                 # Kwallet GUI app for key and password management.
+#calligra					# Office suite (word, ppt, excel).
+okular						# Document viewer.
+ark						# Archiving tool.
+gwenview					# Image viewer.
+kcharselect					# Character selector application.
+kcolorchooser					# Color chooser application.
+kolourpaint					# Paint application. Very similar to Window's Paint.
+kdenlive					# Video editor.
+opentimelineio					# Kdenlive Opt dep -> Timeline export/import.
+opencv						# Kdenlive Opt dep -> Motion tracking.
+#recordmydesktop				# Kdenlive Opt dep -> Screen capture.
+
+#: Others
+mpv						# Simple & lightweight media player.
+#baka-mplayer					# libmpv based multimedia player written with Qt.
+onlyoffice					# Office suite (word, ppt, excel).
+kitty						# Terminal emulator.
+brave-bin					# Chomium based browser that respects privacy.
+latte-dock					# Amazing C++ based floating dock.
+flameshot					# Screenshot app.
+qbittorrent					# Torrenting app.
+veracrypt					# Full disk encryption tool.
+virtualbox					# Virtualization tool.
+virtualbox-host-modules-arch			# Virtualbox host kernel modules.
+virtualbox-guest-iso				# Extends the functionality of Virtualbox.
+freetube					# Youtube client app that respects privacy.
+octopi						# Powerful Qt frontend for Pacman + AUR.
+#pamac-all					# Great GTK frontend for Pacman; also supports AUR, flatpaks & snaps.
+#: }}}
+
+#################################################
+#: Others {{{
+nvidia-prime					# Scripts to use run applications with nvidia gpu render offload.
+mkinitcpio-firmware				# Remove "Possibly missing firmware" warnings.
+#: }}}

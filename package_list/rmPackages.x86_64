@@ -1,0 +1,84 @@
+#################################################
+#		Packages to Remove		#
+#################################################
+
+#################################################
+#: ArcoLinux: {{{
+arcolinux-alacritty-git
+arcolinux-neofetch-git
+arcolinux-sddm-simplicity-git
+arcolinux-wallpapers-git
+#: }}}
+
+#################################################
+#: Drivers related: {{{
+
+#: AMD <3
+xf86-video-ati
+xf86-video-amdgpu
+xf86-video-nouveau
+
+#: Intel
+xf86-video-intel
+
+#: NVIDIA (fuck you, btw!)
+nouveau
+nvidia-settings
+
+#: Others
+xf86-video-openchrome
+xf86-video-vesa
+xf86-video-fbdev
+xf86-input-elographics
+r8168-dkms
+broadcom-wl
+broadcom-wl-dkms
+#: }}}
+
+#################################################
+#: Unwanted apps: {{{
+
+alacritty
+urxvt-resize-font-git
+urxvt-perls
+urxvt-fullscreen
+rxvt-unicode
+rxvt-unicode-terminfo
+termite
+nano
+tmux
+screen
+mc
+
+duf-bin
+dex
+asciinema
+clonezilla
+partclone
+yay-bin
+numlockx
+polkit-gnome
+gparted
+gpart
+gksu
+arch-install-scripts
+qemu-guest-agent
+refind
+xsel
+#: }}}
+
+#################################################
+#: Theme related:{{{
+#: Theme
+arc-gtk-theme
+
+#: Icons
+sardi-icons
+surfn-icons-git
+
+#: Cursor
+bibata-cursor-theme-bin
+
+#: Font
+
+#: }}}
