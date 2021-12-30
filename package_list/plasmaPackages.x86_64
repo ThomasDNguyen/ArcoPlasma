@@ -73,12 +73,21 @@ gst-plugins-base				# Multimedia graph framework - base plugins.
 gst-plugins-good				# PulseAudio support and good codecs.
 gst-plugins-bad					# Additional codecs.
 gst-plugins-ugly				# Additional additional codecs.
-pulseaudio-alsa					# ALSA Configuration for PulseAudio.
-pulseaudio-bluetooth				# Bluetooth support for PulseAudio.
-#pulseaudio-equalizer				# Graphical equalizer for PulseAudio.
-#pulseaudio-zeroconf				# Zeroconf support for PulseAudio.
-pavucontrol-qt					# A Qt PulseAudio mixer.
-firewalld					# plasma-firewall backend.
+#gst-plugin-pipewire				# Multimedia graph framework - pipewire plugin.
+pulseaudio					# Featureful, general-purpose sound server.
+pulseaudio-alsa					# Opt dep for pulseaudio -> ALSA configuration (recommended).
+pulseaudio-bluetooth				# Opt dep for pulseaudio -> Bluetooth support.
+#pulseaudio-jack				# Opt dep for pulseaudio -> JACK support.
+#pulseaudio-zeroconf				# Opt dep for pulseaudio -> Zeroconf support.
+#pulseaudio-equalizer				# Opt dep for pulseaudio -> Graphical equalizer for PulseAudio.
+pavucontrol-qt					# A Qt PulseAudio mixer (Works with PireWire as well).
+#pipewire					# Low-latency audio/video router and processor (Replacement for PulseAudio & JACK).
+#pipewire-alsa					# Opt dep for pipewire -> ALSA configuration.
+#pipewire-pulse					# Opt dep for pipewire -> PulseAudio replacement (bluetooth support included).
+#pipewire-jack					# Opt dep for pipewire -> JACK support.
+#pipewire-zeroconf				# Opt dep for pipewire -> Zeroconf support.
+wireplumber					# pipewire-session-manager (kwin requires this as well).
+firewalld					# Backend for plasma-firewall & sshguard.
 #ufw						# Alternative plasma-firewall backend.
 #ufw-extras					# Extra configuration files for UFW.
 cryfs						# plasma-vault backend.
