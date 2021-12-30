@@ -6,7 +6,7 @@
 #: Beautify {{{
 
 #: Configuration tools
-#kvantum					# SVG-based theme engine for Qt5/6.
+kvantum						# SVG-based theme engine for Qt5/6.
 #qt5ct						# Qt5 Configuration Utility
 
 #: Themes
