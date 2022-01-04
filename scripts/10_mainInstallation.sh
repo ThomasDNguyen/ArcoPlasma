@@ -4,7 +4,7 @@
 . variables.sh
 
 #: Update system.
-sudo pacman -Syyu
+sudo pacman -Syyu --noconfirm
 
 #: Install plasma base system.
 sudo pacman -S --needed --noconfirm $(sed 's/#.*//g ; /^[[:space:]]*$/d' $plasma)

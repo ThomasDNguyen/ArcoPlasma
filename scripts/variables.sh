@@ -6,3 +6,6 @@ plasma="${plf}/plasmaPackages.x86_64"			# "plasmaPackages.x86_64"	file location.
 arco="${plf}/arcoPackages.x86_64"			# "arcoPackages.x86_64"		file location.
 repo="${plf}/repoPackages.x86_64"			# "repoPackages.x86_64"		file location.
 aur="${plf}/aurPackages.x86_64"				# "aurPackages.x86_64"		file location.
+
+pulseaudio="${plf}/pulseaudioPackages.x86_64"		# "pulseaudioPackages.x86_64"	file location.
+pipewire="${plf}/pipewirePackages.x86_64"		# "pipewirePackages.x86_64"	file location.

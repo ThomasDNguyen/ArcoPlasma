@@ -66,6 +66,8 @@ ffmpeg						# Power media tool to record, convert, stream audio & video.
 ffmpegthumbs					# Adds video thumbnail to dolphin.
 kdegraphics-thumbnailers			# Adds PDF and PS thumbnails to dolphin.
 kdegraphics-mobipocket				# Plugins to handle mobipocket files. Adds mobi support to Okular.
+cronie						# kcron dependancy.
+#fcron						# Alternative kcron dep.
 phonon-qt5					# The multimedia framework by KDE.
 phonon-qt5-gstreamer				# Phonon GStreamer backend for Qt5.
 gst-libav					# libav codec.
@@ -86,7 +88,9 @@ pavucontrol-qt					# A Qt PulseAudio mixer (Works with PireWire as well).
 #pipewire-pulse					# Opt dep for pipewire -> PulseAudio replacement (bluetooth support included).
 #pipewire-jack					# Opt dep for pipewire -> JACK support.
 #pipewire-zeroconf				# Opt dep for pipewire -> Zeroconf support.
-wireplumber					# pipewire-session-manager (kwin requires this as well).
+wireplumber					# The new pipewire-session-manager (kwin also requires a pipewire-session-manager).
+wireplumber-docs				# Documentation for wireplumber.
+#pipewire-media-session				# Older, less flexible pipewire session manager but works well for now.
 firewalld					# Backend for plasma-firewall & sshguard.
 #ufw						# Alternative plasma-firewall backend.
 #ufw-extras					# Extra configuration files for UFW.

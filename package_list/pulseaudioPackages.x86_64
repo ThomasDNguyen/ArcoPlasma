@@ -1,0 +1,12 @@
+#################################################
+#		PulseAudio Packages		#
+#################################################
+
+#################################################
+pulseaudio					# Featureful, general-purpose sound server.
+pulseaudio-alsa					# Opt dep -> ALSA configuration (recommended).
+pulseaudio-bluetooth				# Opt dep -> Bluetooth support.
+#pulseaudio-equalizer				# Opt dep -> Graphical equalizer for PulseAudio.
+#pulseaudio-jack				# Opt dep -> JACK support.
+#pulseaudio-lirc				# Opt dep -> Infrared (lirc) support
+#pulseaudio-zeroconf				# Opt dep -> Zeroconf support.
