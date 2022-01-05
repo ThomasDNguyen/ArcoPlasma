@@ -9,7 +9,7 @@ pipewire-alsa					# Opt dep -> ALSA configuration.
 pipewire-docs					# Documentation for pipewire.
 #pipewire-jack					# Opt dep -> JACK support.
 pipewire-pulse					# Opt dep -> PulseAudio replacement (bluetooth support included).
-wireplumber					# The new pipewire-session-manager (kwin also requires a pipewire-session-manager).
-wireplumber-docs				# Documentation for wireplumber.
-#pipewire-media-session				# Older, less flexible pipewire-session-manager (but "just works").
+#wireplumber					# The new pipewire-session-manager (kwin also requires a pipewire-session-manager).
+#wireplumber-docs				# Documentation for wireplumber.
+pipewire-media-session				# Older, less flexible pipewire-session-manager (but "just works").
 #pipewire-zeroconf				# Opt dep -> Zeroconf support.

@@ -3,13 +3,8 @@
 #: Include variables.
 . variables.sh
 
-cleanup()
-{
-	echo "Cleaning up..."
-	[ -x /usr/bin/paru ] && paru -c || sudo pacman -Rns --noconfirm $(pacman -Qqdt)
-	echo "FINISHED! **Reboot is recommended**"
-	echo 'You can later check if the service is running properly with: "pactl info"'
-}
+#: Include functions.
+. functions.sh
 
 echo "Choose an option:"
 echo "1. Pulse to Wire: Replace PulseAudio with *PIPEWIRE*"
@@ -19,18 +14,21 @@ echo -n "Choose (1/2/3): "
 read choice
 case $choice in
 	"1")
-		yes | sudo pacman -S --needed $(sed 's/#.*//g ; /^[[:space:]]*$/d' $pipewire)
-		sudo pacman -Rn --noconfirm $(pacman -Qqe | grep -w "$(sed 's/#.*//g ; /^[[:space:]]*$/d ; s/^[[:space:]]*// ; s/[[:space:]]*$//' $pulseaudio)")
+		yes | sudo pacman -S --needed $(parse_package_list $pipewire)
+		sudo pacman -Rn --noconfirm $(pacman -Qqe | grep -w "$(parse_package_list $pulseaudio)")
 		echo "Operation successful: replaced PulseAudio with PipeWire."
-		cleanup
-		exit -1;;
+		;;
 	"2")
-		yes | sudo pacman -S --needed $(sed 's/#.*//g ; /^[[:space:]]*$/d' $pulseaudio)
-		sudo pacman -Rn --noconfirm $(pacman -Qqe | grep -w "$(sed 's/#.*//g ; /^[[:space:]]*$/d ; s/^[[:space:]]*// ; s/[[:space:]]*$//' $pipewire)")
+		yes | sudo pacman -S --needed $(parse_package_list $pulseaudio)
+		sudo pacman -Rn --noconfirm $(pacman -Qqe | grep -w "$(parse_package_list $pipewire)")
 		echo "Operation successful: replaced PipeWire with PulseAudio."
-		cleanup
-		exit -1;;
+		;;
 	*)
 		echo "No changes made. Quitting..."
 		exit -1;;
 esac
+
+echo "Cleaning up..."
+[ -x /usr/bin/paru ] && paru -c || sudo pacman -Rns $(pacman -Qqdt)
+echo "FINISHED! **Reboot is recommended**"
+echo 'You can later check if the service is running properly with: "pactl info"'

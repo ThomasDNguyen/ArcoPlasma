@@ -1,5 +1,16 @@
 #!/bin/bash
 
+#: This is where all the variables for ArcoPlasma scripts are located.
+
+#: Package lists locations.
+#:
+#: Explanation:
+#: "pwd" prints working directory.
+#: "<<<" means "here-string" -> gives the leading program a pre-made string as input.
+#: "sed s/scripts/package_list/" replaces the word "scripts" with "package_list".
+#: => Conclusion: $(sed s/scripts/package_list/ <<< $(pwd)) gives us a flexible way of obtaining the
+#: location of the package lists.
+#:
 plf="$(sed s/scripts/package_list/ <<< $(pwd))"		# package_list			folder location.
 remove="${plf}/removePackages.x86_64"			# "removePackages.x86_64"	file location.
 plasma="${plf}/plasmaPackages.x86_64"			# "plasmaPackages.x86_64"	file location.
