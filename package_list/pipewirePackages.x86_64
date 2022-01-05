@@ -3,6 +3,7 @@
 #################################################
 
 #################################################
+gst-plugin-pipewire				# Opt dep -> GStreamer plugin.
 pipewire					# Low-latency audio/video router and processor.
 pipewire-alsa					# Opt dep -> ALSA configuration.
 pipewire-docs					# Documentation for pipewire.
@@ -12,4 +13,3 @@ wireplumber					# The new pipewire-session-manager (kwin also requires a pipewir
 wireplumber-docs				# Documentation for wireplumber.
 #pipewire-media-session				# Older, less flexible pipewire-session-manager (but "just works").
 #pipewire-zeroconf				# Opt dep -> Zeroconf support.
-gst-plugin-pipewire				# Opt dep -> GStreamer plugin.

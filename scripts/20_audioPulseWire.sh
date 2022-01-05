@@ -20,13 +20,13 @@ read choice
 case $choice in
 	"1")
 		yes | sudo pacman -S --needed $(sed 's/#.*//g ; /^[[:space:]]*$/d' $pipewire)
-		#sudo pacman -Rn --noconfirm $(pacman -Qqe | grep -w "$(sed 's/#.*//g ; /^[[:space:]]*$/d' $pulseaudio)")
+		sudo pacman -Rn --noconfirm $(pacman -Qqe | grep -w "$(sed 's/#.*//g ; /^[[:space:]]*$/d ; s/^[[:space:]]*// ; s/[[:space:]]*$//' $pulseaudio)")
 		echo "Operation successful: replaced PulseAudio with PipeWire."
 		cleanup
 		exit -1;;
 	"2")
 		yes | sudo pacman -S --needed $(sed 's/#.*//g ; /^[[:space:]]*$/d' $pulseaudio)
-		#sudo pacman -Rn --noconfirm $(pacman -Qqe | grep -w "$(sed 's/#.*//g ; /^[[:space:]]*$/d' $pipewire)")
+		sudo pacman -Rn --noconfirm $(pacman -Qqe | grep -w "$(sed 's/#.*//g ; /^[[:space:]]*$/d ; s/^[[:space:]]*// ; s/[[:space:]]*$//' $pipewire)")
 		echo "Operation successful: replaced PipeWire with PulseAudio."
 		cleanup
 		exit -1;;
