@@ -52,6 +52,7 @@ rxvt-unicode
 rxvt-unicode-terminfo
 termite
 nano
+vim
 tmux
 screen
 mc

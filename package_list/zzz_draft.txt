@@ -1,0 +1,22 @@
+#################################################
+#: Optionals {{{
+
+#: Power management
+#tlp                                            # Power management tool for laptops.
+#acpi_call                                      # Opt dep for tlp -> ThinkPad battery functions.
+#tp_smapi                                       # Opt dep for tlp -> ThinkPad battery functions.
+#ethtool                                        # Opt dep for tlp -> Disable Wake On Lan.
+#smartmontools                                  # Opt dep for tlp -> Display S.M.A.R.T. data in tlp-stat.
+#powertop                                       # Tool to diagnose power consumption & management.
+#auto-cpufreq (AUR)                             # Check this out. It's in the AUR (for now). Don't use alongside tlp.
+
+#: Network discovery
+#zeroconf-ioslave                               # Adds an entry to Dolphin's Network page to show local services such as printers which advertise themselves with DNS-SD.
+
+#: SMB
+#samba                                          # SMB Fileserver and AD Domain server.
+#smbclient                                      # Tools to access a server's filespace and printers via SMB.
+#kdenetwork-filesharing                         # SMB protocal file sharing for KDE. Set folders to be shared on your local network using Samba.
+#smb4k                                          # Samba network browsing application.
+#python-pysmbc                                  # Python 3 bindings for libsmbclient.
+#: }}}

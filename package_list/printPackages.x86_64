@@ -1,0 +1,38 @@
+#################################################
+#			Print			#
+#################################################
+
+#################################################
+#: Main packages for printing {{{
+print-manager					# Set up and configure printers.
+system-config-printer				# Auto-detect the printer driver.
+colord						# ICC (International Color Consortium) color profile support.
+cups-pk-helper					# CUPS policykit helper.
+cups						# The CUPS Printing System.
+cups-pdf					# PDF printer for CUPS.
+bluez-cups					# CUPS printer backend for Bluetooth printers.
+#: }}}
+
+#################################################
+#: Extra drivers {{{
+#splix						# Drivers for Samsung printers.
+#hplip						# Drivers for HP printers.
+#python-pillow					# hplip Opt dep -> cmdline scanning.
+#python-pyqt5					# hplip Opt dep -> GUI app + hp-toolbox.
+#python-reportlab				# hplip Opt dep -> PDF output in hp-scan.
+#sane						# hplip Opt dep -> for scanner support.
+#xsane						# hplip Opt dep -> sane scanner frontend.
+#libusb						# hplip Opt dep -> for advanced usb support.
+#: }}}
+
+#################################################
+#: Old stuff {{{
+#gsfonts
+#gutenprint
+#foomatic-db
+#foomatic-db-engine
+#foomatic-db-gutenprint-ppds
+#foomatic-db-nonfree
+#foomatic-db-nonfree-ppds
+#foomatic-db-ppds
+#}}}

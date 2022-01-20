@@ -1,11 +1,9 @@
 #################################################
-#		Packages to Install		#
+#		KDE Plasma Desktop		#
 #################################################
 
 #################################################
-#: KDE Plasma Desktop {{{
-
-#: Group package: plasma (x86_64)
+#: Group package: plasma (x86_64) {{{
 bluedevil					# Plasma bluetooth.
 breeze						# Plasma's default theme Breeze.
 breeze-gtk					# Breeze widget theme for GTK2 & GTK3.
@@ -52,15 +50,72 @@ powerdevil					# Power management.
 sddm-kcm					# KDE Config Module for SDDM.
 systemsettings					# KDE system manager for hardware, software, and workspaces.
 xdg-desktop-portal-kde				# Better integrate KDE & GTK apps.
+#: }}}
 
-#: Meta package: kde-system-meta
+#################################################
+#: Meta package: kde-accessibility-meta {{{
+#kmag						# Screen Magnifier.
+#kmousetool					# Configure and automate mouse clicks.
+#kmouth						# Speech Synthesizer GUI app.
+#kontrast					# Color contrast checking app.
+#: }}}
+
+#################################################
+#: Meta package: kde-pim-meta {{{
+#akonadi-calendar-tools				# CLI tools to manage akonadi calendars.
+#akonadiconsole					# Akonadi management and debugging console.
+#akregator					# KDE feed reader.
+#grantlee-editor				# Utilities and tools to manage themes in KDE PIM apps.
+#itinerary					# Itinerary and boarding pass management appl.
+#kaddressbook					# Contacts manager app.
+#kalarm						# Alarm scheduler app.
+#kdepim-addons					# Addons for KDE PIM apps.
+#kjots						# Notes app.
+kleopatra					# Certificate Manager and Unified Crypto GUI (use *this* over kgpg).
+kmail						# Mail client app.
+#knotes						# Popup notes app.
+#kontact					# GUI app to group several kde pim apps together.
+#korganizer					# Calendar and scheduling app.
+zanshin						# Checklist/todo app.
+#: }}}
+
+#################################################
+#: Meta package: kde-system-meta {{{
 dolphin						# KDE's default file manager.
 kcron						# KDE's cron implementation.
 khelpcenter					# Documentation lookup for KDE apps.
 ksystemlog					# System log viewer app.
 partitionmanager				# KDE's version of gparted.
+#: }}}
 
-#: The rest
+#################################################
+#: Meta package: kde-utilities-meta {{{
+ark						# Archiving tool.
+filelight					# Disk usage information viewing tool.
+kate						# KDE's default text editor (Good).
+#kbackup					# Simple, user-friendly GUI backup tool.
+#kcalc						# Calculator.
+kcharselect					# Character selector application.
+#kdebugsettings					# Control debug permissions and settings for KDE apps.
+kdf						# KDiskFree. Disk usage utility.
+kdialog						# Display dialog boxes from shell scripts. Syntax inspired from `dialog` command.
+keditbookmarks					# Extention to add bookmarking functionality to (a few) applications like Konsole and krdc.
+#kfind						# File/Folder searching tool.
+#kfloppy					# Floppy disk formater.
+#kgpg						# A GnuPG frontend (BAD. Use kleopatra instead).
+konsole                                         # KDE's default Terminal emulator (Good).
+#kteatime					# Timer app for steeping tea (seriously...).
+#ktimer						# Count down app.
+kwalletmanager					# Kwallet GUI app for key and password management.
+#kwrite						# Stripped down version of Kate.
+markdownpart					# Adds markdown functionality to KParts-using softwares like Ark and Kate.
+#print-manager					# (Already included in the Printing option below).
+#sweeper					# Shitty system cleaning app. Do NOT install.
+yakuake						# Dropdown terminal emulator based on Konsole.
+#: }}}
+
+#################################################
+#: The rest {{{
 dolphin-plugins					# Adds Dropbox, Git,... integration to dolphin.
 ffmpeg						# Power media tool to record, convert, stream audio & video.
 ffmpegthumbs					# Adds video thumbnail to dolphin.
@@ -75,25 +130,25 @@ gst-plugins-base				# Multimedia graph framework - base plugins.
 gst-plugins-good				# PulseAudio support and good codecs.
 gst-plugins-bad					# Additional codecs.
 gst-plugins-ugly				# Additional additional codecs.
-#gst-plugin-pipewire				# Multimedia graph framework - pipewire plugin.
-pulseaudio					# Featureful, general-purpose sound server.
-pulseaudio-alsa					# Opt dep for pulseaudio -> ALSA configuration (recommended).
-pulseaudio-bluetooth				# Opt dep for pulseaudio -> Bluetooth support.
+gst-plugin-pipewire				# Multimedia graph framework - pipewire plugin.
+#pulseaudio					# Featureful, general-purpose sound server.
+#pulseaudio-alsa				# Opt dep for pulseaudio -> ALSA configuration (recommended).
+#pulseaudio-bluetooth				# Opt dep for pulseaudio -> Bluetooth support.
 #pulseaudio-jack				# Opt dep for pulseaudio -> JACK support.
 #pulseaudio-zeroconf				# Opt dep for pulseaudio -> Zeroconf support.
 #pulseaudio-equalizer				# Opt dep for pulseaudio -> Graphical equalizer for PulseAudio.
 pavucontrol-qt					# A Qt PulseAudio mixer (Works with PireWire as well).
-#pipewire					# Low-latency audio/video router and processor (Replacement for PulseAudio & JACK).
-#pipewire-alsa					# Opt dep for pipewire -> ALSA configuration.
-#pipewire-pulse					# Opt dep for pipewire -> PulseAudio replacement (bluetooth support included).
+pipewire					# Low-latency audio/video router and processor (Replacement for PulseAudio & JACK).
+pipewire-alsa					# Opt dep for pipewire -> ALSA configuration.
+pipewire-pulse					# Opt dep for pipewire -> PulseAudio replacement (bluetooth support included).
 #pipewire-jack					# Opt dep for pipewire -> JACK support.
 #pipewire-zeroconf				# Opt dep for pipewire -> Zeroconf support.
 wireplumber					# The new pipewire-session-manager (kwin also requires a pipewire-session-manager).
-wireplumber-docs				# Documentation for wireplumber.
+#wireplumber-docs				# Documentation for wireplumber.
 #pipewire-media-session				# Older, less flexible pipewire session manager but works well for now.
-firewalld					# Backend for plasma-firewall & sshguard.
-#ufw						# Alternative plasma-firewall backend.
-#ufw-extras					# Extra configuration files for UFW.
+#firewalld					# Backend for plasma-firewall & sshguard.
+ufw						# Alternative plasma-firewall backend.
+ufw-extras					# Extra configuration files for UFW.
 cryfs						# plasma-vault backend.
 #encfs						# Old and insecure. DO NOT USE.
 gocryptfs					# Alternative plasma-vault backend.
@@ -102,7 +157,6 @@ bup						# Efficient backup system based on the git packfile format.
 ibus						# Input method framework for multilingual input.
 kinit						# Helper library to speed up KDE app start time.
 sddm						# KDE's default display manager (a.k.a login manager).
-kdf						# KDiskFree. Disk usage utility.
 qt5-virtualkeyboard				# Virtual keyboard framework. Adds virtual keyboard at login screen.
 xdg-desktop-portal				# Helps integrate KDE & GTK. Eg: Letting GTK apps (such as brave-bin) use KDE's file picker dialog.
 bluez-utils					# Development and debugging utilities for the bluetooth protocol stack.
@@ -120,44 +174,10 @@ kio-fuse					# FUSE interface for KIO.
 kio-gdrive					# Integrate and sync Google Drive with KDE applications (Dolphin, Gwenview,...).
 mtpfs						# FUSE filesystem that supports reading and writing from any MTP device.
 packagekit-qt5					# To install new krunner plugins and show native apps on Discover.
-kdialog						# Display dialog boxes from shell scripts. Syntax inspired from `dialog` command.
-keditbookmarks					# Extention to add bookmarking functionality to (a few) applications like Konsole and krdc.
 purpose						# Helps integrate many services and plugins (sharing, publishing,...).
 power-profiles-daemon				# Opt dep for powerdevil -> Power profiles support.
 kwallet						# Secure and unified container for user passwords.
 appmenu-gtk-module				# Some GTK apps (such as nvidia-settings) require this package to be able to display its icon in app tray.
 ocs-url						# An install helper program for items served via OpenCollaborationServices.
 systemd-kcm					# Adds functionality to manage systemd services from the Settings menu.
-#: }}}
-
-#################################################
-#: Optionals {{{
-
-#: Power management
-#tlp						# Power management tool for laptops.
-#acpi_call					# Opt dep for tlp -> ThinkPad battery functions.
-#tp_smapi					# Opt dep for tlp -> ThinkPad battery functions.
-#ethtool					# Opt dep for tlp -> Disable Wake On Lan.
-#smartmontools					# Opt dep for tlp -> Display S.M.A.R.T. data in tlp-stat.
-#powertop					# Tool to diagnose power consumption & management.
-#auto-cpufreq (AUR)				# Check this out. It's in the AUR (for now). Don't use alongside tlp.
-
-#: Network discovery
-#zeroconf-ioslave				# Adds an entry to Dolphin's Network page to show local services such as printers which advertise themselves with DNS-SD.
-
-#: Printing
-print-manager					# Set up and configure printers.
-system-config-printer				# Auto-detect the printer driver.
-colord						# ICC (International Color Consortium) color profile support.
-cups-pk-helper					# CUPS policykit helper.
-cups						# The CUPS Printing System.
-cups-pdf					# PDF printer for CUPS.
-bluez-cups					# CUPS printer backend for Bluetooth printers.
-
-#: SMB
-#samba						# SMB Fileserver and AD Domain server.
-#smbclient					# Tools to access a server's filespace and printers via SMB.
-#kdenetwork-filesharing				# SMB protocal file sharing for KDE. Set folders to be shared on your local network using Samba.
-#smb4k						# Samba network browsing application.
-#python-pysmbc					# Python 3 bindings for libsmbclient.
 #: }}}
