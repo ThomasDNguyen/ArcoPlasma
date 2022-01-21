@@ -46,7 +46,8 @@ paru-bin					# yay (AUR helper).
 bat						# cat
 exa						# ls
 ripgrep						# grep
-skim						# fzf
+skim						# fzf (fuzzy finder).
+starship					# powerlevel10k (prompt).
 #: }}}
 
 #################################################
