@@ -61,12 +61,29 @@ xdg-desktop-portal-kde				# Better integrate KDE & GTK apps.
 #: }}}
 
 #################################################
+#: Meta package: kde-graphics-meta {{{
+gwenview					# Image viewer.
+#kamera						# Opt dep for Gwenview -> import pictures from gphoto2 cameras.
+kcolorchooser					# Color chooser application.
+kdegraphics-mobipocket				# Plugins to handle mobipocket files. Adds mobi support to Okular.
+kdegraphics-thumbnailers			# Adds PDF and PS thumbnails to Dolphin.
+#kimagemapeditor				# Editor for image maps embedded inside HTML files, based on the <map> tag.
+#kipi-plugins					# DO NOT INSTALL. Super out-dated with many bugs (might change in the future).
+kolourpaint					# Paint application. Very similar to Window's Paint.
+#kruler						# On-screen ruler for measuring pixels.
+okular						# Document viewer.
+#skanlite					# Simple image scanning application.
+#spectacle					# Screenshot capture utility. KDE's flameshot alternative.
+svgpart						# Adds SVG viewing functionality to KParts-using softwares like Ark and Kate.
+#: }}}
+
+#################################################
 #: Meta package: kde-pim-meta {{{
 #akonadi-calendar-tools				# CLI tools to manage akonadi calendars.
 #akonadiconsole					# Akonadi management and debugging console.
 #akregator					# KDE feed reader.
 #grantlee-editor				# Utilities and tools to manage themes in KDE PIM apps.
-#itinerary					# Itinerary and boarding pass management appl.
+#itinerary					# Itinerary and boarding pass management app.
 #kaddressbook					# Contacts manager app.
 #kalarm						# Alarm scheduler app.
 #kdepim-addons					# Addons for KDE PIM apps.
@@ -100,7 +117,7 @@ kcharselect					# Character selector application.
 kdf						# KDiskFree. Disk usage utility.
 kdialog						# Display dialog boxes from shell scripts. Syntax inspired from `dialog` command.
 keditbookmarks					# Extention to add bookmarking functionality to (a few) applications like Konsole and krdc.
-#kfind						# File/Folder searching tool.
+kfind						# File/Folder searching tool.
 #kfloppy					# Floppy disk formater.
 #kgpg						# A GnuPG frontend (BAD. Use kleopatra instead).
 konsole                                         # KDE's default Terminal emulator (Good).
@@ -109,7 +126,7 @@ konsole                                         # KDE's default Terminal emulato
 kwalletmanager					# Kwallet GUI app for key and password management.
 #kwrite						# Stripped down version of Kate.
 markdownpart					# Adds markdown functionality to KParts-using softwares like Ark and Kate.
-#print-manager					# (Already included in the Printing option below).
+print-manager					# Set up and configure printers.
 #sweeper					# Shitty system cleaning app. Do NOT install.
 yakuake						# Dropdown terminal emulator based on Konsole.
 #: }}}
@@ -119,8 +136,6 @@ yakuake						# Dropdown terminal emulator based on Konsole.
 dolphin-plugins					# Adds Dropbox, Git,... integration to dolphin.
 ffmpeg						# Power media tool to record, convert, stream audio & video.
 ffmpegthumbs					# Adds video thumbnail to dolphin.
-kdegraphics-thumbnailers			# Adds PDF and PS thumbnails to dolphin.
-kdegraphics-mobipocket				# Plugins to handle mobipocket files. Adds mobi support to Okular.
 cronie						# kcron dependancy.
 #fcron						# Alternative kcron dep.
 phonon-qt5					# The multimedia framework by KDE.

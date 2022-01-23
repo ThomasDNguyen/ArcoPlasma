@@ -56,10 +56,6 @@ starship					# powerlevel10k (prompt).
 #: KDE
 #calligra					# Office suite (word, ppt, excel).
 kompare						# Graphical diff tool. KDE alternative to Meld.
-okular						# Document viewer.
-gwenview					# Image viewer.
-kcolorchooser					# Color chooser application.
-kolourpaint					# Paint application. Very similar to Window's Paint.
 kdenlive					# Video editor.
 opentimelineio					# Kdenlive Opt dep -> Timeline export/import.
 opencv						# Kdenlive Opt dep -> Motion tracking.
