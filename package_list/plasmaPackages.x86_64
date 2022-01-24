@@ -97,6 +97,23 @@ zanshin						# Checklist/todo app.
 #: }}}
 
 #################################################
+#: Meta package: kde-sdk-meta {{{
+#cervisia					# Version control system front-end. NOPE!
+dolphin-plugins					# Adds Dropbox, Git,... integration to dolphin.
+#kapptemplate					# KDE Template Generator.
+#kcachegrind					# Profile data visualization tool. Determine most time consuming part of program execution. Meh.
+#kde-dev-scripts				# Usuful scripts and setting files for KDE app dev.
+#kde-dev-utils					# Small utilities for devs using KDE/Qt libs/frameworks. Meh.
+#kdesdk-kioslaves				# KDE SDK KIO-Slaves. NOPE!
+#kdesdk-thumbnailers				# Plugins for the thumbnailing system.
+#kirigami-gallery				# Component gallery application built using Kirigami.
+kompare						# Graphical diff tool. KDE's alternative to Meld. Nice!
+#lokalize					# Computer-Aided Translation System (CAT).
+#poxml						# Translates DocBook XML files using gettext po files.
+#umbrello					# UML modeller. Meh.
+#: }}}
+
+#################################################
 #: Meta package: kde-system-meta {{{
 dolphin						# KDE's default file manager.
 kcron						# KDE's cron implementation.
@@ -132,8 +149,25 @@ yakuake						# Dropdown terminal emulator based on Konsole.
 #: }}}
 
 #################################################
+#: Meta package: kdevelop-meta {{{
+#kdevelop					# KDE's IDE for C, C++, Python, QML/JavaScript and PHP.
+#	astyle					# Opt dep -> Plugin to format C/C++ code automatically.
+#	clazy					# Opt dep -> clang-based code checker.
+#	cmake					# Opt dep -> cmake integration.
+#	cppcheck				# Opt dep -> Static C/C++ code analyser.
+#	okteta					# Opt dep -> KDE hex editor	-> Adds debugger support.
+#	gdb					# Opt dep -> *THE* GNU debugger	-> Adds debugger support.
+#	lldb					# Opt dep -> Next gen debugger	-> Adds debugger support.
+#	git					# Opt dep -> Git support.
+#	heaptrack				# Opt dep -> memory profiler.
+#	konsole					# Opt dep -> embedded terminal.
+#	meson					# Opt dep -> meson integration.
+#	qt5-doc					# Opt dep -> Qt documentation integration.
+#kdevelop-php					# PHP language and documentation plugin for KDevelop.
+#: }}}
+
+#################################################
 #: The rest {{{
-dolphin-plugins					# Adds Dropbox, Git,... integration to dolphin.
 ffmpeg						# Power media tool to record, convert, stream audio & video.
 ffmpegthumbs					# Adds video thumbnail to dolphin.
 cronie						# kcron dependancy.
@@ -158,9 +192,9 @@ pipewire-alsa					# Opt dep for pipewire -> ALSA configuration.
 pipewire-pulse					# Opt dep for pipewire -> PulseAudio replacement (bluetooth support included).
 #pipewire-jack					# Opt dep for pipewire -> JACK support.
 #pipewire-zeroconf				# Opt dep for pipewire -> Zeroconf support.
-wireplumber					# The new pipewire-session-manager (kwin also requires a pipewire-session-manager).
+wireplumber					# The new pipewire-session-manager (kwin also requires a pipewire-session-manager). Use this.
 #wireplumber-docs				# Documentation for wireplumber.
-#pipewire-media-session				# Older, less flexible pipewire session manager but works well for now.
+#pipewire-media-session				# Older, less flexible pipewire session manager but works well as of early 2022.
 #firewalld					# Backend for plasma-firewall & sshguard.
 ufw						# Alternative plasma-firewall backend.
 ufw-extras					# Extra configuration files for UFW.

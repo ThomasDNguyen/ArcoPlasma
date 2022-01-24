@@ -55,7 +55,6 @@ starship					# powerlevel10k (prompt).
 
 #: KDE
 #calligra					# Office suite (word, ppt, excel).
-kompare						# Graphical diff tool. KDE alternative to Meld.
 kdenlive					# Video editor.
 opentimelineio					# Kdenlive Opt dep -> Timeline export/import.
 opencv						# Kdenlive Opt dep -> Motion tracking.

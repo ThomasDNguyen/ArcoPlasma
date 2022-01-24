@@ -1,0 +1,17 @@
+#################################################
+#		Wayland Packages		#
+#################################################
+
+wayland						# A display server protocol. Future replacement for Xorg.
+wayland-protocals				# Specifications of extended Wayland protocols.
+wayland-utils					# Wayland tools to display information about compositor.
+plasma-wayland-protocols			# Plasma protocols for Wayland. Common dep for wayland packages on KDE.
+plasma-wayland-session				# Plasma Wayland session. Part of plasma-workspace package.
+qt5-wayland					# Provides APIs for Wayland.
+kwayland					# Qt-style wrapper for the Wayland libraries.
+kwayland-server					# Wayland server components built on KDE Frameworks.
+kwayland-integration				# Integration plugins for KDE frameworks on Wayland.
+wl-clipboard					# Add terminal clipboard support on Wayland.
+egl-wayland					# EGLStream-based Wayland external platform. NVIDIA users need this.
+xorg-xwayland					# To run X clients under wayland.
+#sway						# An i3wm-like Tiling Wayland compositor.
