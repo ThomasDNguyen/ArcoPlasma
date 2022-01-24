@@ -83,6 +83,7 @@ svgpart						# Adds SVG viewing functionality to KParts-using softwares like Ark
 #dragon						# Simple multimedia player.
 #elisa						# Music player written in QtQuick.
 ffmpegthumbs					# Video thumbnail creator -> Adds video thumbnail to dolphin.
+	ffmpeg					# Power media tool to record, convert, stream audio & video.
 #juk						# A jukebox, tagger and music collection manager.
 #k3b						# CD burning application.
 #kamoso						# KDE's webcam app.
@@ -202,9 +203,6 @@ yakuake						# Dropdown terminal emulator based on Konsole.
 
 #################################################
 #: The rest {{{
-ffmpeg						# Power media tool to record, convert, stream audio & video.
-cronie						# kcron dependancy.
-#fcron						# Alternative kcron dep.
 phonon-qt5					# The multimedia framework by KDE.
 phonon-qt5-gstreamer				# Phonon GStreamer backend for Qt5.
 gst-libav					# libav codec.
@@ -214,20 +212,22 @@ gst-plugins-bad					# Additional codecs.
 gst-plugins-ugly				# Additional additional codecs.
 gst-plugin-pipewire				# Multimedia graph framework - pipewire plugin.
 #pulseaudio					# Featureful, general-purpose sound server.
-#pulseaudio-alsa				# Opt dep for pulseaudio -> ALSA configuration (recommended).
-#pulseaudio-bluetooth				# Opt dep for pulseaudio -> Bluetooth support.
-#pulseaudio-jack				# Opt dep for pulseaudio -> JACK support.
-#pulseaudio-zeroconf				# Opt dep for pulseaudio -> Zeroconf support.
-#pulseaudio-equalizer				# Opt dep for pulseaudio -> Graphical equalizer for PulseAudio.
-pavucontrol-qt					# A Qt PulseAudio mixer (Works with PireWire as well).
+	#pulseaudio-alsa			# Opt dep for pulseaudio -> ALSA configuration (recommended).
+	#pulseaudio-bluetooth			# Opt dep for pulseaudio -> Bluetooth support.
+	#pulseaudio-jack			# Opt dep for pulseaudio -> JACK support.
+	#pulseaudio-zeroconf			# Opt dep for pulseaudio -> Zeroconf support.
+	#pulseaudio-equalizer			# Opt dep for pulseaudio -> Graphical equalizer for PulseAudio.
 pipewire					# Low-latency audio/video router and processor (Replacement for PulseAudio & JACK).
-pipewire-alsa					# Opt dep for pipewire -> ALSA configuration.
-pipewire-pulse					# Opt dep for pipewire -> PulseAudio replacement (bluetooth support included).
-#pipewire-jack					# Opt dep for pipewire -> JACK support.
-#pipewire-zeroconf				# Opt dep for pipewire -> Zeroconf support.
-wireplumber					# The new pipewire-session-manager (kwin also requires a pipewire-session-manager). Use this.
-#wireplumber-docs				# Documentation for wireplumber.
-#pipewire-media-session				# Older, less flexible pipewire session manager but works well as of early 2022.
+	pipewire-alsa				# Opt dep for pipewire -> ALSA configuration.
+	pipewire-pulse				# Opt dep for pipewire -> PulseAudio replacement (bluetooth support included).
+	#pipewire-jack				# Opt dep for pipewire -> JACK support.
+	#pipewire-zeroconf			# Opt dep for pipewire -> Zeroconf support.
+	wireplumber				# The new pipewire-session-manager (kwin also requires a pipewire-session-manager). Use this.
+	#wireplumber-docs			# Documentation for wireplumber.
+	#pipewire-media-session			# Older, less flexible pipewire session manager but works well as of early 2022.
+pavucontrol-qt					# A Qt PulseAudio mixer (Works with PireWire as well).
+cronie						# kcron dependancy.
+#fcron						# Alternative kcron dep.
 #firewalld					# Backend for plasma-firewall & sshguard.
 ufw						# Alternative plasma-firewall backend.
 ufw-extras					# Extra configuration files for UFW.
@@ -243,7 +243,6 @@ qt5-virtualkeyboard				# Virtual keyboard framework. Adds virtual keyboard at lo
 xdg-desktop-portal				# Helps integrate KDE & GTK. Eg: Letting GTK apps (such as brave-bin) use KDE's file picker dialog.
 bluez-utils					# Development and debugging utilities for the bluetooth protocol stack.
 kdeconnect					# Adds communication between KDE and your smartphone.
-sshfs						# Remote filesystem browser.
 qt5-tools					# For some runcommand plugin actions.
 xclip						# Clipboard support for terminal text editor (better xsel alternative).
 kaccounts-providers				# Adds online accounts integration with KDE.
@@ -253,6 +252,7 @@ kio-fuse					# FUSE interface for KIO.
 mtpfs						# FUSE filesystem that supports reading and writing from any MTP device.
 qt5-imageformats				# Plugins for additional image formats (TIFF, MNG, TGA, WBMP). Helps display thumbnails for additional image formats.
 kimageformats					# Image format plugins for Qt5. Helps display thumbnails for additional image formats.
+#calligra					# KDE's office suite. Acts as a plugin to display thumbnails (preview) for doc, docx, odt, ods files.
 packagekit-qt5					# To install new krunner plugins and show native apps on Discover.
 purpose						# Helps integrate many services and plugins (sharing, publishing,...).
 power-profiles-daemon				# Opt dep for powerdevil -> Power profiles support.
