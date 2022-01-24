@@ -1,1 +1,6 @@
- 
+#: SMB
+samba						# SMB Fileserver and AD Domain server.
+smbclient					# Tools to access a server's filespace and printers via SMB.
+kdenetwork-filesharing				# SMB protocal file sharing for KDE. Set folders to be shared on your local network using Samba.
+smb4k						# Samba network browsing application.
+python-pysmbc					# Python 3 bindings for libsmbclient.

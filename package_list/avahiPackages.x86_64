@@ -1,1 +1,2 @@
- 
+#: Network discovery
+zeroconf-ioslave                               # Adds an entry to Dolphin's Network page to show local services such as printers which advertise themselves with DNS-SD.

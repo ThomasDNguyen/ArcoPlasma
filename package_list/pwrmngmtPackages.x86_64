@@ -1,1 +1,8 @@
- 
+#: Power management
+#tlp						# Power management tool for laptops.
+#acpi_call					# Opt dep for tlp -> ThinkPad battery functions.
+#tp_smapi					# Opt dep for tlp -> ThinkPad battery functions.
+#ethtool					# Opt dep for tlp -> Disable Wake On Lan.
+#smartmontools					# Opt dep for tlp -> Display S.M.A.R.T. data in tlp-stat.
+#powertop					# Tool to diagnose power consumption & management.
+#auto-cpufreq (AUR)				# Check this out. It's in the AUR (for now). Don't use alongside tlp.
