@@ -55,10 +55,6 @@ starship					# powerlevel10k (prompt).
 
 #: KDE
 #calligra					# Office suite (word, ppt, excel).
-kdenlive					# Video editor.
-opentimelineio					# Kdenlive Opt dep -> Timeline export/import.
-opencv						# Kdenlive Opt dep -> Motion tracking.
-#recordmydesktop				# Kdenlive Opt dep -> Screen capture.
 
 #: Others
 mpv						# Simple & lightweight media player.

@@ -78,6 +78,40 @@ svgpart						# Adds SVG viewing functionality to KParts-using softwares like Ark
 #: }}}
 
 #################################################
+#: Meta package: kde-multimedia-meta {{{
+#audiocd-kio					# KIO slave that enables certain apps (like Dolphin or k3b) to access audio and CD text data. Adds entry to Settings.
+#dragon						# Simple multimedia player.
+#elisa						# Music player written in QtQuick.
+ffmpegthumbs					# Video thumbnail creator -> Adds video thumbnail to dolphin.
+#juk						# A jukebox, tagger and music collection manager.
+#k3b						# CD burning application.
+#kamoso						# KDE's webcam app.
+kdenlive					# (Great) Video editor.
+	opentimelineio				# Kdenlive Opt dep -> Timeline export/import.
+	opencv					# Kdenlive Opt dep -> Motion tracking.
+	recordmydesktop				# Kdenlive Opt dep -> Screen capture.
+#kmix						# KDE volume control program. Not bad but unnecessary.
+#kwave						# Sound editor.
+#: }}}
+
+#################################################
+#: Meta package: kde-network-meta {{{
+kdeconnect					# Amazing project. Check it out: "https://kdeconnect.kde.org/".
+#kdenetwork-filesharing				# Plugin that prompts properties dialog for Samba filesharing.
+#kget						# Download manager that integrates poorly with non-KDE web browsers. DON'T USE.
+kio-extras					# Additional components to increase the functionality of KIO.
+kio-gdrive					# Integrate and sync Google Drive with KDE applications (Dolphin, Gwenview,...).
+#konqueror					# File-manager-and-web-browser-all-in-one app. Pretty old, wouldn't recommand.
+#konversation					# IRC client.
+#kopete						# Instant messenger that supports AIM, ICQ, Jabber, Novell GroupWise Messenger,...
+#krdc						# Remote Desktop Client. VNC and RDP supported.
+#krfb						# Desktop Sharing. Can be accessed with a VNC client to view and control current session from remote machine.
+#ktorrent					# Powerful BitTorrent client. Issue: after 1 month of normal use the app suddenly doesn't open anymore.
+#telepathy-kde-meta				# Meta package for Telepathy - KDE's instant messaging and voice over IP client.
+#zeroconf-ioslave				# Adds an entry to Dolphin's Network page to show local services such as printers which advertise themselves with DNS-SD.
+#: }}}
+
+#################################################
 #: Meta package: kde-pim-meta {{{
 #akonadi-calendar-tools				# CLI tools to manage akonadi calendars.
 #akonadiconsole					# Akonadi management and debugging console.
@@ -169,7 +203,6 @@ yakuake						# Dropdown terminal emulator based on Konsole.
 #################################################
 #: The rest {{{
 ffmpeg						# Power media tool to record, convert, stream audio & video.
-ffmpegthumbs					# Adds video thumbnail to dolphin.
 cronie						# kcron dependancy.
 #fcron						# Alternative kcron dep.
 phonon-qt5					# The multimedia framework by KDE.
@@ -216,12 +249,10 @@ xclip						# Clipboard support for terminal text editor (better xsel alternative
 kaccounts-providers				# Adds online accounts integration with KDE.
 kaccounts-integration				# Adds online accounts integration with KDE.
 kio						# Resource and network access abstraction.
-kio-extras					# Additional components to increase the functionality of KIO.
+kio-fuse					# FUSE interface for KIO.
+mtpfs						# FUSE filesystem that supports reading and writing from any MTP device.
 qt5-imageformats				# Plugins for additional image formats (TIFF, MNG, TGA, WBMP). Helps display thumbnails for additional image formats.
 kimageformats					# Image format plugins for Qt5. Helps display thumbnails for additional image formats.
-kio-fuse					# FUSE interface for KIO.
-kio-gdrive					# Integrate and sync Google Drive with KDE applications (Dolphin, Gwenview,...).
-mtpfs						# FUSE filesystem that supports reading and writing from any MTP device.
 packagekit-qt5					# To install new krunner plugins and show native apps on Discover.
 purpose						# Helps integrate many services and plugins (sharing, publishing,...).
 power-profiles-daemon				# Opt dep for powerdevil -> Power profiles support.
