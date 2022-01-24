@@ -4,16 +4,20 @@
 
 #################################################
 #: Beautify {{{
-
 #: Configuration tools
 kvantum						# SVG-based theme engine for Qt5/6.
 #qt5ct						# Qt5 Configuration Utility
 
-#: Themes
+#: Global Themes
 materia-kde
 
-#: Icons
-papirus-icon-theme
+#: Application Style
+
+#: Plasma Style
+
+#: Color schemes
+
+#: Window Decorations
 
 #: Fonts
 noto-fonts
@@ -21,11 +25,18 @@ noto-fonts-emoji
 ttf-joypixels
 ttf-ubuntu-font-family
 #ttf-ibm-plex
+
+#: Icons
+papirus-icon-theme
+
+#: Cursors
+
+#:Splash Screen
+
 #: }}}
 
 #################################################
 #: CLI tools {{{
-
 #: The usuals
 git						# Version control system.
 curl						# An URL retrieval utility and library.
@@ -34,8 +45,6 @@ fzf						# Command-line fuzzy finder.
 neofetch					# System information tool.
 htop						# Interactive process viewer.
 btop						# Better-looking htop.
-openssh						# Connectivity tool for remote login with the SSH protocol.
-ffmpeg						# Complete solution to record, convert and stream audio and video.
 yt-dlp						# Fork of youtube-dl multimedia downloader.
 konsave						# Utility to save KDE customizations.
 #hardcode-fixer-git				# Fix icons for applications with hardcoded icons.
@@ -52,11 +61,6 @@ starship					# powerlevel10k (prompt).
 
 #################################################
 #: GUI Applications {{{
-
-#: KDE
-#calligra					# Office suite (word, ppt, excel).
-
-#: Others
 mpv						# Simple & lightweight media player.
 #baka-mplayer					# libmpv based multimedia player written with Qt.
 onlyoffice					# Office suite (word, ppt, excel).
@@ -75,7 +79,7 @@ octopi						# Powerful Qt frontend for Pacman + AUR.
 #: }}}
 
 #################################################
-#: Others {{{
+#: Drivers && Firmware related {{{
 nvidia-prime					# Scripts to use run applications with nvidia gpu render offload.
 mkinitcpio-firmware				# Remove "Possibly missing firmware" warnings.
 #: }}}
