@@ -3,7 +3,6 @@
 #################################################
 
 #################################################
-#ibus-bamboo					# A Vietnamese IME for IBus.
 simplenote-electron-bin				# Electron note app.
 haruna						# Video player built with Qt/QML on top of libmpv.
 kasts						# Kirigami-based podcast player.
