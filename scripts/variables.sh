@@ -27,3 +27,4 @@ pwrmngmt="${plf}/pwrmngmtPackages.x86_64"		# "pwrmngmtPackages.x86_64		file loca
 smb="${plf}/smbPackages.x86_64"				# "smbPackages.x86_64"			file location.
 avahi="${plf}/avahiPackages.x86_64"			# "avahiPackages.x86_64"		file location.
 ssh="${plf}/sshPackages.x86_64"				# "sshPackages.x86_64"			file location.
+vbox="${plf}/vboxPackages.x86_64"			# "vboxPackages.x86_64"			file location.

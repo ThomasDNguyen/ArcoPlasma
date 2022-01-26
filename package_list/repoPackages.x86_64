@@ -70,9 +70,6 @@ latte-dock					# Amazing C++ based floating dock.
 flameshot					# Screenshot app.
 qbittorrent					# Torrenting app.
 veracrypt					# Full disk encryption tool.
-virtualbox					# Virtualization tool.
-virtualbox-host-modules-arch			# Virtualbox host kernel modules.
-virtualbox-guest-iso				# Extends the functionality of Virtualbox.
 freetube					# Youtube client app that respects privacy.
 octopi						# Powerful Qt frontend for Pacman + AUR.
 #pamac-all					# Great GTK frontend for Pacman; also supports AUR, flatpaks & snaps.

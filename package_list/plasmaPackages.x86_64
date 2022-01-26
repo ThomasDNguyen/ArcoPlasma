@@ -31,7 +31,7 @@ layer-shell-qt					# Kscreenlocker's dependancy.
 libkscreen					# Kscreen libs.
 libksysguard					# Libs for system monitor apps.
 milou						# Indexing & file search.
-#oxygen						# Legacy KDE theme (probably).
+oxygen						# Old & ugly theme. Unfortunately all the default system sounds are in this package.
 plasma-browser-integration			# Browser integration.
 plasma-desktop					# Base package for KDE plasma desktop.
 plasma-disks					# S.M.A.R.T. device monitor app.

@@ -1,0 +1,14 @@
+#################################################
+#		VirtualBox Packages		#
+#################################################
+
+#: Repo:
+virtualbox					# Virtualization application.
+#virtualbox-ext-vnc				# Add remote access (VNC) extention to vbox.
+virtualbox-guest-iso				# Official VirtualBox Guest Additions ISO image.
+virtualbox-guest-utils				# VirtualBox Guest userspace utilities. Need this to add imported vbox images.
+virtualbox-host-dkms				# VirtualBox Host kernel modules sources.
+virtualbox-host-modules-arch			# Virtualbox host kernel modules for Arch Kernel.
+
+#: AUR:
+#virtualbox-ext-oracle				# Oracle VM VirtualBox Extension Pack. Better to add this to the aurPackages.x86_64
