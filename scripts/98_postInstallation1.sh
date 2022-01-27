@@ -23,12 +23,7 @@ rm -rf ~/.cache					# Remove .cache folder and sub dirs from home.
 #find ~/.cache -user $USER -exec rm -rf {} \;	# Alternative way. 
 
 #: Exit (bash) session to generate history file to remove it in the last postInstallation script.
-time=5
 echo "Login again and run the last postInstallation script."
 echo "Exiting in:"
-while [ $time -gt 0 ]; do
-	echo "$time..."
-	sleep 1
-	((time --))
-done
+countdown 5
 kill -9 $PPID

@@ -17,3 +17,17 @@ parse_package_list()
 {
 	sed 's/#.*//g ; /^[[:space:]]*$/d ; s/^[[:space:]]*// ; s/[[:space:]]*$//' $1
 }
+
+#: Countdown function to give the user some time to read the messages before executing a command.
+#: Explanation:
+#: 
+#:
+countdown()
+{
+	time=$1
+	while [ $time -gt 0 ]; do
+		echo "$time..."
+		sleep 1
+		((time --))
+	done
+}
