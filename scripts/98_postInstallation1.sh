@@ -31,4 +31,4 @@ while [ $time -gt 0 ]; do
 	sleep 1
 	((time --))
 done
-exit
+kill -9 $PPID
