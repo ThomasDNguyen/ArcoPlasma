@@ -4,7 +4,6 @@
 rm -rf $HOME/.screenrc $HOME/.viminfo $HOME/.lesshst $HOME/.bash* $HOME/.config/autostart/arcolinux* $HOME/.config/alacritty $HOME/.config/arcolinux-welcome-app $HOME/.config/neofetch
 
 #: Shutdown/Reboot.
-time=5
 echo "ArcoPlasma installation is complete. Would you like to:"
 echo "1. Reboot?"
 echo "2. Shutdown?"
@@ -24,3 +23,4 @@ case $choice in
 		;;
 	*)
 		exit -1;;
+esac
