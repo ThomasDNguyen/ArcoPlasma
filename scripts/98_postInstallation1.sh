@@ -29,6 +29,6 @@ echo "Exiting in:"
 while [ $time -gt 0 ] do
 	echo "$time..."
 	sleep 1
-	((time--))
+	time=$(($time - 1))
 done
 exit
