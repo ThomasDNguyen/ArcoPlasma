@@ -14,4 +14,4 @@ virtualbox-host-modules-arch			# Virtualbox host kernel modules for Arch Kernel.
 #virtualbox-host-dkms				# For any other kernel (including linux-lts).
 
 #: AUR:
-#virtualbox-ext-oracle				# Oracle VM VirtualBox Extension Pack. Better to add this to the aurPackages.x86_64
+virtualbox-ext-oracle				# Oracle VM VirtualBox Extension Pack.

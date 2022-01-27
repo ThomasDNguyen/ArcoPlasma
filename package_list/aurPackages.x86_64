@@ -6,6 +6,5 @@
 simplenote-electron-bin				# Electron note app.
 haruna						# Video player built with Qt/QML on top of libmpv.
 kasts						# Kirigami-based podcast player.
-virtualbox-ext-oracle				# Oracle VM VirtualBox Extension Pack.
 #octopi-notifier-frameworks			# Notifier for Octopi with Knotifications support.
 #auto-cpufreq					# Automatic CPU speed & power optimizer.
