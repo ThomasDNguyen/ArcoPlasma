@@ -26,9 +26,9 @@ rm -rf ~/.cache					# Remove .cache folder and sub dirs from home.
 time=5
 echo "Login again and run the last postInstallation script."
 echo "Exiting in:"
-while [ $time -gt 0 ] do
+while [ $time -gt 0 ]; do
 	echo "$time..."
 	sleep 1
-	time=$(($time - 1))
+	((time --))
 done
 exit
