@@ -3,6 +3,9 @@
 #: Set zsh as default shell (for $USER && root).
 chsh -s $(which zsh) && sudo chsh -s $(which zsh)
 
+#: Init zsh.
+echo "#New zshrc file" > $HOME/.zshrc
+
 #: Enable essential services.
 sudo systemctl enable NetworkManager bluetooth.service sddm.service
 
@@ -19,12 +22,13 @@ paru -Sc --noconfirm				# For repo + aur.
 rm -rf ~/.cache					# Remove .cache folder and sub dirs from home.
 #find ~/.cache -user $USER -exec rm -rf {} \;	# Alternative way. 
 
-#: Clean up files and dirs that are not needed.
-rm -rf $HOME/.screenrc $HOME/.viminfo $HOME/.lesshst $HOME/.bash* $HOME/.config/autostart/arcolinux* $HOME/.config/alacritty $HOME/.config/arcolinux-welcome-app $HOME/.config/neofetch
-
-#: Init zsh.
-echo "#New zshrc file" > $HOME/.zshrc && zsh
-
-#: Shutdown/Reboot.
-#sudo shutdown -h now				# Shutdown.
-#sudo reboot					# Reboot.
+#: Exit (bash) session to generate history file to remove it in the last postInstallation script.
+time=5
+echo "Login again and run the last postInstallation script."
+echo "Exiting in:"
+while [ $time -gt 0 ] do
+	echo "$time..."
+	sleep 1
+	((time--))
+done
+exit

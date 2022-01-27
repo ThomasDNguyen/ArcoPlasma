@@ -16,7 +16,7 @@ sudo gpasswd -a $USER vboxusers
 sudo modprobe vboxdrv
 
 #: Enable service(s).
-#: 
+#: VirtualBox service.
 sudo systemctl enable --now vboxservice.service
-#: 
-sudo systemctl enable --now vboxweb.service
+#: VirtualBox web page service.
+#sudo systemctl enable --now vboxweb.service

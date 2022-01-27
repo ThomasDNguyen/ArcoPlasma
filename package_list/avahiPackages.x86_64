@@ -1,2 +1,6 @@
-#: Network discovery
-zeroconf-ioslave                               # Adds an entry to Dolphin's Network page to show local services such as printers which advertise themselves with DNS-SD.
+#################################################
+#		Zeroconf Packages		#
+#################################################
+
+avahi						# Service Discovery for Linux using mDNS/DNS-SD (compatible with Apple's Bonjour).
+zeroconf-ioslave				# Adds an entry to Dolphin's Network page to show local services such as printers which advertise themselves with DNS-SD.

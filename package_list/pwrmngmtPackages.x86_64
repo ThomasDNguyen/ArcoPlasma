@@ -1,4 +1,7 @@
-#: Power management
+#################################################
+#		Power management		#
+#################################################
+
 #tlp						# Power management tool for laptops.
 #acpi_call					# Opt dep for tlp -> ThinkPad battery functions.
 #tp_smapi					# Opt dep for tlp -> ThinkPad battery functions.
