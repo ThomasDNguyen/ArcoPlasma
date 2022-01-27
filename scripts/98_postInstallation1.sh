@@ -1,5 +1,8 @@
 #!/bin/bash
 
+#: Include functions.
+. functions.sh
+
 #: Set zsh as default shell (for $USER && root).
 chsh -s $(which zsh) && sudo chsh -s $(which zsh)
 
