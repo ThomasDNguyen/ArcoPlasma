@@ -7,7 +7,7 @@ gst-plugin-pipewire				# Opt dep -> GStreamer plugin.
 pipewire					# Low-latency audio/video router and processor.
 pipewire-alsa					# Opt dep -> ALSA configuration.
 #pipewire-docs					# Documentation for pipewire.
-pipewire-jack					# Opt dep -> JACK support.
+pipewire-jack					# Opt dep -> JACK support + jack2 package replacement as well.
 pipewire-pulse					# Opt dep -> PulseAudio replacement (bluetooth support included).
 wireplumber					# The new pipewire-session-manager (kwin also requires a pipewire-session-manager).
 #wireplumber-docs				# Documentation for wireplumber.

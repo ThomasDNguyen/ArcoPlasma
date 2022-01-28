@@ -36,6 +36,9 @@ plasma-browser-integration			# Browser integration.
 plasma-desktop					# Base package for KDE plasma desktop.
 plasma-disks					# S.M.A.R.T. device monitor app.
 plasma-firewall					# Firewall.
+	#firewalld				# Backend for plasma-firewall & sshguard.
+	ufw					# Alternative plasma-firewall backend.
+	ufw-extras				# Extra configuration files for UFW.
 plasma-integration				# Qt Platform Theme integration plugins.
 plasma-nm					# Network manager.
 plasma-pa					# PulseAudio for Plasma.
@@ -43,6 +46,9 @@ plasma-pa					# PulseAudio for Plasma.
 plasma-systemmonitor				# System monitor app.
 #plasma-thunderbolt				# Control Thunderbolt devices.
 plasma-vault					# Encrypted vault for storing sensitive data.
+	cryfs					# plasma-vault opt dep -> encryption program backend.
+	#encfs					# Old and insecure. DO NOT USE.
+	gocryptfs				# plasma-vault opt dep -> Alternative encryption program backend.
 plasma-workspace				# Entire KDE depends on this (even plasma-desktop).
 #plasma-workspace-wallpapers			# Wallpapers.
 polkit-kde-agent				# KDE's polkit.
@@ -152,6 +158,8 @@ kompare						# Graphical diff tool. KDE's alternative to Meld. Nice!
 #: Meta package: kde-system-meta {{{
 dolphin						# KDE's default file manager.
 kcron						# KDE's cron implementation.
+	cronie					# kcron dep -> cron backend.
+	#fcron					# kcron dep -> Alternative cron backend.
 khelpcenter					# Documentation lookup for KDE apps.
 ksystemlog					# System log viewer app.
 partitionmanager				# KDE's version of gparted.
@@ -220,20 +228,12 @@ gst-plugin-pipewire				# Multimedia graph framework - pipewire plugin.
 pipewire					# Low-latency audio/video router and processor (Replacement for PulseAudio & JACK).
 	pipewire-alsa				# Opt dep for pipewire -> ALSA configuration.
 	pipewire-pulse				# Opt dep for pipewire -> PulseAudio replacement (bluetooth support included).
-	#pipewire-jack				# Opt dep for pipewire -> JACK support.
+	pipewire-jack				# Opt dep for pipewire -> JACK support + jack2 package replacement as well.
 	#pipewire-zeroconf			# Opt dep for pipewire -> Zeroconf support.
 	wireplumber				# The new pipewire-session-manager (kwin also requires a pipewire-session-manager). Use this.
 	#wireplumber-docs			# Documentation for wireplumber.
 	#pipewire-media-session			# Older, less flexible pipewire session manager but works well as of early 2022.
 pavucontrol-qt					# A Qt PulseAudio mixer (Works with PireWire as well).
-cronie						# kcron dependancy.
-#fcron						# Alternative kcron dep.
-#firewalld					# Backend for plasma-firewall & sshguard.
-ufw						# Alternative plasma-firewall backend.
-ufw-extras					# Extra configuration files for UFW.
-cryfs						# plasma-vault backend.
-#encfs						# Old and insecure. DO NOT USE.
-gocryptfs					# Alternative plasma-vault backend.
 kup						# KDE's backup solution, a frontend for bup.
 bup						# Efficient backup system based on the git packfile format.
 ibus						# Input method framework for multilingual input.
