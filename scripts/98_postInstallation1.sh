@@ -10,7 +10,7 @@ chsh -s $(which zsh) && sudo chsh -s $(which zsh)
 echo "#New zshrc file" > $HOME/.zshrc
 
 #: Enable essential services.
-sudo systemctl enable NetworkManager bluetooth.service sddm.service
+sudo systemctl enable NetworkManager bluetooth.service sddm.service fstrim.timer
 
 #: Remove orphan packages.
 #sudo pacman -Rn --noconfirm $(pacman -Qqdt)	# Remove true orphans.
